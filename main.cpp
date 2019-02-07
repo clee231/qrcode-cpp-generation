@@ -42,7 +42,6 @@ string makeASCII(const QRcode *qrcode, int invert) {
   }
 
   int realwidth = (qrcode->width + margin * 2) * 2;
-  int buffer_s = realwidth + 2;
   string buffer;
 
   /* top margin*/

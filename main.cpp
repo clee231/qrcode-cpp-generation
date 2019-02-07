@@ -10,7 +10,7 @@ using namespace std;
 int margin = 2;
 
 // This function just creates lines of blank space.
-string writeASCII_margin(int realwidth, int invert)
+string makeASCII_margin(int realwidth, int invert)
 {
   int y, h;
 
@@ -45,7 +45,7 @@ string makeASCII(const QRcode *qrcode, int invert) {
   string buffer;
 
   /* top margin*/
-  image += writeASCII_margin(realwidth, invert);
+  image += makeASCII_margin(realwidth, invert);
 
   /* data */
   for(y = 0; y < qrcode->width; y++) {
@@ -72,7 +72,7 @@ string makeASCII(const QRcode *qrcode, int invert) {
   }
 
   /* bottom margin*/
-  image += writeASCII_margin(realwidth, invert);
+  image += makeASCII_margin(realwidth, invert);
 
   return image;
 

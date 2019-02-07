@@ -10,4 +10,4 @@ This is a simple ASCII implementation of the QR code generation.
 
 ## Screenshot
 
-![Screenshot][screenshot.jpg]
+![Screenshot](screenshot.jpg)
